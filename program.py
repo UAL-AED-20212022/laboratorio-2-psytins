@@ -4,7 +4,7 @@
 # armazenar e consultar nomes de países. 
 #
 # ### Requisitos do Programa ###
-#  Para que este programa funcione de forma adequada, é apenas necessário o respectivo nome
+#  Para que este programa funcione de forma adequada, é apenas necessário inserir o respectivo nome do
 # país. 
 #
 # ### Resultado esperado ###
@@ -12,7 +12,7 @@
 # tais como o nome dos países registados. 
 #   
 # ###############################
-import view
+import task1.view as view
 import sys
 sys.stdout.reconfigure(encoding="UTF-8")
 if __name__ == "__main__":

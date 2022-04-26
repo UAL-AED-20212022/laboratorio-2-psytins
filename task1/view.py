@@ -1,8 +1,8 @@
-import controller
+import task1.controller as controller
 
 def main():
     #Inicializar Dados
-    #controller.Iniciar_Dados()
+    controller.Iniciar_Dados()
 
     while(True):
         try:
@@ -132,4 +132,5 @@ def main():
 
         else:
             #Debug
-            pass
+            print(controller.model.Lista_Pais.traverse_list())
+            
