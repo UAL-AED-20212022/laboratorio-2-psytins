@@ -64,7 +64,7 @@ def main():
 
             #país
             pais_novo : str = menu_split[1]
-            indice : int = menu_split[2]
+            indice : int = int(menu_split[2])
 
             # Sem saídas de insucesso ---
 
@@ -100,7 +100,7 @@ def main():
             # Sem saídas de insucesso ---
 
             # Eliminar primeiro
-            pais_eliminado : controller.Node = controller.Eliminar_Primeiro() #Ter atenção com o tipo de dados
+            pais_eliminado : controller.Node = controller.Eliminar_Primeiro() 
             print(f"O país {pais_eliminado} foi eliminado da lista.")
 
         elif(menu_split[0] == "EUE"):
@@ -109,7 +109,7 @@ def main():
             # Sem saídas de insucesso ---
 
             # Eliminar ultimo
-            pais_eliminado : controller.Node = controller.Eliminar_Ultimo() #Ter atenção com o tipo de dados
+            pais_eliminado : controller.Node = controller.Eliminar_Ultimo() 
             print(f"O país {pais_eliminado} foi eliminado da lista.")
 
         elif(menu_split[0] == "EP"):
@@ -128,7 +128,7 @@ def main():
             # Eliminar ultimo
             if(error_ep == False):
                 controller.Eliminar_Pais(pais_eliminar)
-                print(f"O país {pais_eliminado} foi eliminado da lista.")
+                print(f"O país {pais_eliminar} foi eliminado da lista.")
 
         else:
             #Debug

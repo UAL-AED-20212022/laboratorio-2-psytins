@@ -23,8 +23,8 @@ def Registar_no_Fim(pais : str) -> model.LinkedList:
 #Registar país *depois* de outro elemento
 #Retorna a lista ligada atual
 def Registar_Depois(pais : str, pais_registado : str) -> model.LinkedList:
-    #Inserir no fim
-    model.Lista_Pais.insert_after_item(pais)
+    #Inserir depois de elemento
+    model.Lista_Pais.insert_after_item(pais_registado, pais)
     #returnar lista ligada
     return model.Lista_Pais.traverse_list()    
 
@@ -32,7 +32,7 @@ def Registar_Depois(pais : str, pais_registado : str) -> model.LinkedList:
 #Retorna a lista ligada atual
 def Registar_Antes(pais : str, pais_registado : str) -> model.LinkedList:
     #Inserir no fim
-    model.Lista_Pais.insert_before_item(pais)
+    model.Lista_Pais.insert_before_item(pais_registado, pais)
     #returnar lista ligada
     return model.Lista_Pais.traverse_list()
 
@@ -55,7 +55,7 @@ def Verificar_Pais(pais : str) -> bool:
 
 #Elimina o primeiro elemento da lista
 #Retorna o elemento eliminado
-def Eliminar_Primeiro() -> model.Node: # or LinkedList
+def Eliminar_Primeiro() -> model.Node:
     model.Lista_Pais.reverse_linkedlist()
     elemento_eliminado : model.Node = model.Lista_Pais.get_last_node()
     model.Lista_Pais.reverse_linkedlist()
@@ -64,7 +64,7 @@ def Eliminar_Primeiro() -> model.Node: # or LinkedList
 
 #Elimina o ultimo elemento da lista
 #Retorna o elemento eliminado
-def Eliminar_Ultimo() -> model.Node: # or LinkedList
+def Eliminar_Ultimo() -> model.Node:
     elemento_eliminado : model.Node = model.Lista_Pais.get_last_node()
     model.Lista_Pais.delete_at_end()
     return elemento_eliminado
