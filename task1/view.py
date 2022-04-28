@@ -3,7 +3,6 @@ import task1.controller as controller
 def main():
     #Inicializar Dados
     controller.Iniciar_Dados()
-
     while(True):
         try:
             # Entrada de dados
@@ -16,7 +15,7 @@ def main():
         if(menu_split[0] == "RPI"):
             # REGISTAR PAÍS NO *INÍCIO* DA LISTA
 
-            #país
+            #input
             pais_novo : str = menu_split[1]
 
             # Sem saídas de insucesso ---
@@ -27,7 +26,7 @@ def main():
         elif(menu_split[0] == "RPF"):
             # REGISTAR PAÍS NO *FIM* DA LISTA
 
-            #país
+            #input
             pais_novo : str = menu_split[1]
 
             # Sem saídas de insucesso ---
@@ -38,7 +37,7 @@ def main():
         elif(menu_split[0] == "RPDE"):
             # REGISTAR PAÍS *DEPOIS* DE OUTRO ELEMENTO
 
-            #país
+            #input
             pais_novo : str = menu_split[1]
             pais_registado : str = menu_split[2]
 
@@ -50,7 +49,7 @@ def main():
         elif(menu_split[0] == "RPAE"):
             # REGISTAR PAÍS *ANTES* DE OUTRO ELEMENTO
 
-            #país
+            #input
             pais_novo : str = menu_split[1]
             pais_registado : str = menu_split[2]
 
@@ -62,7 +61,7 @@ def main():
         elif(menu_split[0] == "RPII"):
             # REGISTAR PAÍS NUM DETERMINADO ÍNDICE
 
-            #país
+            #input
             pais_novo : str = menu_split[1]
             indice : int = int(menu_split[2])
 
@@ -82,7 +81,7 @@ def main():
         elif(menu_split[0] == "VP"):
             # VERIFICAR A EXISTENCIA DE UM PAIS
 
-            #país
+            #input
             pais : str = menu_split[1]
 
             # Verificar
@@ -116,7 +115,7 @@ def main():
             # ELIMINAR ELEMENTO
             error_ep : bool = False
             
-            #pais
+            #input
             pais_eliminar : str = menu_split[1]
 
             # Saídas de insucesso ---
